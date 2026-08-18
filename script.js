@@ -29,7 +29,7 @@ const closeButton = modal.querySelector('.modal-close');
 let activeScene = 'exterior';
 let previousFocus;
 
-function showScene(name) {
+function showScene(name, updateHistory = true) {
   const next = document.querySelector(`[data-scene="${name}"]`);
   if (!next || name === activeScene) return;
   document.body.classList.add('is-transitioning');
@@ -37,6 +37,7 @@ function showScene(name) {
     scenes.forEach(scene => { scene.hidden = scene !== next; scene.classList.toggle('is-active', scene === next); });
     activeScene = name;
     document.body.dataset.room = name;
+    if (updateHistory) history.pushState({ room: name }, '', name === 'exterior' ? location.pathname : `#${name}`);
     next.querySelector('button, [href]')?.focus({ preventScroll: true });
     window.scrollTo(0, 0);
     window.setTimeout(() => document.body.classList.remove('is-transitioning'), 80);
@@ -64,6 +65,8 @@ function closeExhibit() { modal.hidden = true; document.body.classList.remove('m
 closeButton.addEventListener('click', closeExhibit);
 modal.addEventListener('click', event => { if (event.target === modal) closeExhibit(); });
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) closeExhibit(); });
+window.addEventListener('popstate', event => showScene(event.state?.room || location.hash.slice(1) || 'exterior', false));
+history.replaceState({ room: 'exterior' }, '', location.pathname);
 
 // A restrained bit of museum surveillance.
 const portrait = document.querySelector('.portrait-drawing');
