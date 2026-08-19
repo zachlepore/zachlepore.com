@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Lepore Institute — a tiny digital museum of art, work, film, and experiments by Zach Lepore.">
+  <meta name="theme-color" content="#d8cba8">
+  <title>The Lepore Institute</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#museum">Skip to museum</a>
+
+  <main id="museum">
+    <section class="scene exterior is-active" id="exterior" data-scene="exterior" aria-labelledby="institute-title">
+      <div class="sky" aria-hidden="true"><span class="cloud cloud-one"></span><span class="cloud cloud-two"></span></div>
+      <div class="facade">
+        <div class="roofline"><span></span><span></span><span></span><span></span><span></span></div>
+        <header class="museum-name">
+          <p>Established MMXXVI · Open irregularly</p>
+          <h1 id="institute-title">The Lepore Institute</h1>
+          <span>Art · Work · Film · Experiment</span>
+        </header>
+        <div class="windows" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="entrance">
+          <div class="lintel">LI</div>
+          <button class="doors" type="button" data-enter aria-label="Enter The Lepore Institute">
+            <span class="door door-left"><i></i></span><span class="door door-right"><i></i></span>
+            <b>Enter</b>
+          </button>
+          <div class="steps" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+        <div class="shrub shrub-left" aria-hidden="true"></div><div class="shrub shrub-right" aria-hidden="true"></div>
+      </div>
+      <p class="collection-mark">LI COLLECTION / EST. MMXXVI</p>
+    </section>
+
+    <section class="scene foyer" id="foyer" data-scene="foyer" aria-labelledby="foyer-title" hidden>
+      <header class="room-header"><button data-go="exterior" class="exit">Exit</button><p>Grand Foyer · Floor 01</p><span>LI</span></header>
+      <div class="foyer-architecture" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="doorway doorway-left" aria-hidden="true"><span>Gallery I</span></div>
+      <div class="doorway doorway-right" aria-hidden="true"><span>Gallery IV</span></div>
+      <nav class="directory" aria-labelledby="foyer-title">
+        <p>The Lepore Institute</p>
+        <h2 id="foyer-title">Today’s Exhibitions</h2>
+        <button data-go="work"><b>I</b><span>Works &amp; Professional Activity</span><i>←</i></button>
+        <button data-go="art"><b>II</b><span>Art</span><i>→</i></button>
+        <button data-go="film"><b>III</b><span>Moving Image</span><i>←</i></button>
+        <button data-go="build"><b>IV</b><span>Things Built</span><i>→</i></button>
+      </nav>
+      <button class="founder portrait" data-artifact="founder" aria-label="View About the Founder"><span class="portrait-drawing" aria-hidden="true"></span><b>About the Founder</b></button>
+      <button class="donation" data-artifact="donation" aria-label="Inspect donation box"><span>Donations</span></button>
+      <div class="bench" aria-label="A museum bench" role="img"><i></i><i></i></div>
+      <div class="plant" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+      <div class="extinguisher" aria-hidden="true">FIRE</div>
+    </section>
+
+    <section class="scene gallery work-room" id="work" data-scene="work" aria-labelledby="work-title" hidden>
+      <header class="room-header"><button data-go="foyer">← Foyer</button><p>Gallery I</p><span>LI</span></header>
+      <div class="gallery-title"><p>Permanent Collection</p><h2 id="work-title">Works &amp; Professional Activity</h2></div>
+      <div class="wall-line" aria-hidden="true"></div>
+      <button class="artifact hardhat" data-artifact="engineering" aria-label="Examine Environmental Engineering"><span><i class="hardhat-shell"></i><i class="field-book">FIELD<br>NOTES</i><i class="sample-vial"></i></span><b>Environmental<br>Engineering</b></button>
+      <button class="artifact globe" data-artifact="gis" aria-label="Examine GIS and Mapping globe">
+        <span class="globe-meridian"><i class="globe-sphere"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M17 28c9-13 20-16 29-11l5 12 13 3 4 11-13 8-7 18-15-2-5-13-13-8Z"/><path d="M70 18c9 4 15 12 17 22l-9 5-7-8-9-4Z"/><path d="M69 61l15-5-3 15-13 13-8-5Z"/></svg></i></span><i class="globe-stem"></i><i class="globe-base"></i><b>GIS / Mapping</b>
+      </button>
+      <button class="artifact data-machine" data-artifact="data" aria-label="Examine Data and Technical Work"><span><i class="data-screen">101<br>011</i><i class="data-key"></i><i class="data-key"></i><i class="data-key"></i></span><b>Data / Technical Work</b></button>
+      <button class="artifact hanging-plane" data-artifact="faa" aria-label="Examine FAA Part 107 hanging aircraft">
+        <span class="plane-wires" aria-hidden="true"></span><span class="plane-model"><svg viewBox="0 0 180 75" aria-hidden="true"><path class="plane-body" d="M8 40 69 32 99 8l14 1-13 24 56 8 15 10-70-3-17 19-13-1 8-20-62 4Z"/><path class="plane-detail" d="m42 36 55 7m4-9-6 14m-16-15 21 15"/></svg></span><b>FAA Part 107</b>
+      </button>
+      <button class="artifact lectern" data-artifact="resume" aria-label="Open Catalogue of Professional Activity resume">
+        <span class="lectern-book"><i>CATALOGUE</i><small>OF PROFESSIONAL ACTIVITY</small><strong>RESUME</strong></span><span class="lectern-top"></span><span class="lectern-post"></span><span class="lectern-foot"></span><b>Catalogue / Resume</b>
+      </button>
+      <p class="room-note">Objects on display may be examined.</p>
+    </section>
+
+    <section class="scene gallery art-room" id="art" data-scene="art" aria-labelledby="art-title" hidden>
+      <header class="room-header"><button data-go="foyer">← Foyer</button><p>Gallery II</p><span>LI</span></header>
+      <div class="gallery-title"><p>Rotating Exhibition</p><h2 id="art-title">Art</h2></div>
+      <p class="do-not-touch">Please do not touch the art</p>
+      <button class="artwork artwork-one" data-artifact="art-one" aria-label="View artwork Untitled Field Study"><span role="img" aria-label="Abstract placeholder painting in ochre, rust, and green"></span><b>01</b></button>
+      <button class="artwork artwork-two" data-artifact="art-two" aria-label="View artwork Signal and Soil"><span role="img" aria-label="Abstract placeholder painting with blue lines and red circle"></span><b>02</b></button>
+      <button class="artwork artwork-three" data-artifact="art-three" aria-label="View artwork EROpel Study"><span role="img" aria-label="Abstract placeholder painting with organic black shapes"></span><b>03</b></button>
+      <div class="gallery-bench" aria-hidden="true"></div>
+    </section>
+
+    <section class="scene gallery film-room" id="film" data-scene="film" aria-labelledby="film-title" hidden>
+      <header class="room-header dark"><button data-go="foyer">← Foyer</button><p>Gallery III</p><span>LI</span></header>
+      <div class="gallery-title"><p>Screening Room</p><h2 id="film-title">Moving Image</h2></div>
+      <div class="projector-beam" aria-hidden="true"></div>
+      <button class="screen-installation" data-artifact="film-one" aria-label="View Field Recording 008 details"><span><i>FIELD RECORDING 008</i><b>▶</b></span><em>Projection 01</em></button>
+      <button class="crt crt-one" data-artifact="film-two" aria-label="View Field Recording 009 details"><span><i>NO SIGNAL / FILM 009</i></span><b></b><em>Monitor 02</em></button>
+      <button class="crt crt-two" data-artifact="film-three" aria-label="View Field Recording 010 details"><span><i>ARCHIVE / FILM 010</i></span><b></b><em>Monitor 03</em></button>
+      <p class="film-note">Programme repeats continuously</p>
+    </section>
+
+    <section class="scene gallery build-room" id="build" data-scene="build" aria-labelledby="build-title" hidden>
+      <header class="room-header"><button data-go="foyer">← Foyer</button><p>Gallery IV</p><span>LI</span></header>
+      <div class="gallery-title"><p>Machines &amp; Experiments</p><h2 id="build-title">Things Built</h2></div>
+      <button class="terminal" data-artifact="enviroregindex" aria-label="Examine EnviroRegIndex interactive terminal">
+        <span class="terminal-screen"><i>LI SYSTEMS / 001</i><strong>ENVIRO<br>REG INDEX</strong><small>PRESS TO INSPECT</small></span>
+        <span class="terminal-controls"><i></i><i></i><i></i></span><b></b>
+      </button>
+      <div class="terminal-placard"><b>ENVIROREGINDEX</b><span>Interactive information system<br>2026–Present</span></div>
+      <button class="closed-gallery" data-artifact="installation"><span>Gallery closed<br><small>for installation</small></span></button>
+      <div class="tool-cabinet" aria-hidden="true"><i></i><i></i><i></i></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" data-modal hidden>
+    <article class="exhibit-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal-close" type="button" aria-label="Close exhibit details">Close ×</button>
+      <p class="accession" data-modal-accession></p>
+      <div class="modal-object" data-modal-visual aria-hidden="true"></div>
+      <div class="modal-copy"><h2 id="modal-title"></h2><div data-modal-body></div><div class="modal-links" data-modal-links></div></div>
+    </article>
+  </div>
+  <noscript><p class="noscript">The galleries use a small amount of JavaScript for room changes. Please enable JavaScript to enter; no tracking or framework is used.</p></noscript>
+</body>
+</html>
