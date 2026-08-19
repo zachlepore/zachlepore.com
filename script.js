@@ -22,11 +22,17 @@ function artDetails(artist, year, medium, dimensions, note) { return `<dl><dt>Ar
 function filmDetails(artist, year, medium, runtime) { return `<dl><dt>Artist</dt><dd>${artist}</dd><dt>Year</dt><dd>${year}</dd><dt>Format</dt><dd>${medium}</dd><dt>Runtime</dt><dd>${runtime}</dd></dl><div class="video-slot">Video / thumbnail awaiting installation</div>`; }
 
 const scenes = [...document.querySelectorAll('[data-scene]')];
+const facadeIllustration = document.querySelector('.museum-facade');
 const modal = document.querySelector('[data-modal]');
 const modalPanel = modal.querySelector('.exhibit-modal');
 const closeButton = modal.querySelector('.modal-close');
 let activeScene = 'exterior';
 let previousFocus;
+
+const compactFacade = matchMedia('(max-width: 760px)');
+function sizeFacade(event = compactFacade) { facadeIllustration?.setAttribute('preserveAspectRatio', event.matches ? 'none' : 'xMidYMax meet'); }
+sizeFacade();
+compactFacade.addEventListener?.('change', sizeFacade);
 
 function showScene(name, updateHistory = true) {
   const next = document.querySelector(`[data-scene="${name}"]`);
@@ -43,10 +49,15 @@ function showScene(name, updateHistory = true) {
   }, 180);
 }
 
-document.querySelector('[data-enter]').addEventListener('click', event => {
-  event.currentTarget.classList.add('is-opening');
-  window.setTimeout(() => showScene('foyer'), 520);
-});
+const entranceButtons = [...document.querySelectorAll('[data-enter]')];
+function enterMuseum() {
+  const exterior = document.querySelector('.exterior');
+  if (!exterior || exterior.classList.contains('is-opening')) return;
+  exterior.classList.add('is-opening');
+  entranceButtons.forEach(button => button.disabled = true);
+  window.setTimeout(() => { showScene('foyer'); exterior.classList.remove('is-opening'); entranceButtons.forEach(button => button.disabled = false); }, 700);
+}
+entranceButtons.forEach(button => button.addEventListener('click', enterMuseum));
 document.querySelectorAll('[data-go]').forEach(button => button.addEventListener('click', () => showScene(button.dataset.go)));
 
 document.querySelectorAll('[data-artifact]').forEach(button => button.addEventListener('click', () => openExhibit(button.dataset.artifact, button)));
