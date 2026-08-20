@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Lepore Institute — a tiny digital museum of art, work, film, and experiments by Zach Lepore.">
+  <meta name="theme-color" content="#d8cba8">
+  <title>The Lepore Institute</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#museum">Skip to museum</a>
+
+  <main id="museum">
+    <section class="scene exterior is-active" id="exterior" data-scene="exterior" aria-labelledby="institute-title">
+      <h1 class="visually-hidden" id="institute-title">The Lepore Institute</h1>
+      <div class="exterior-illustration">
+        <svg class="museum-facade" viewBox="0 0 1200 800" role="img" aria-labelledby="facade-title facade-description" preserveAspectRatio="xMidYMax meet">
+          <title id="facade-title">The exterior of The Lepore Institute</title>
+          <desc id="facade-description">A warm illustrated museum with green doors, mullioned windows, banners, lamps, planters, and broad stone steps.</desc>
+          <defs>
+            <linearGradient id="skyWash" x2="0" y2="1"><stop stop-color="#b7cbd0"/><stop offset="1" stop-color="#d4d8ca"/></linearGradient><linearGradient id="wallWash" x2="1" y2="1"><stop stop-color="#ded2b1"/><stop offset=".5" stop-color="#cbbd98"/><stop offset="1" stop-color="#b9aa84"/></linearGradient><linearGradient id="glassWash" x2="1" y2="1"><stop stop-color="#263d39"/><stop offset=".47" stop-color="#526c67"/><stop offset=".54" stop-color="#82918b"/><stop offset=".6" stop-color="#455e59"/><stop offset="1" stop-color="#203632"/></linearGradient><linearGradient id="doorWash" x2="1"><stop stop-color="#1e392f"/><stop offset=".5" stop-color="#365e4b"/><stop offset="1" stop-color="#1d392f"/></linearGradient><pattern id="wallGrain" width="37" height="31" patternUnits="userSpaceOnUse"><circle cx="5" cy="9" r=".8" fill="#604f33" opacity=".11"/><path d="m19 5 6 1M9 25l8-1" stroke="#fff" stroke-width=".7" opacity=".17"/></pattern><filter id="softShadow" x="-25%" y="-25%" width="160%" height="175%"><feDropShadow dx="5" dy="7" stdDeviation="3" flood-color="#17241f" flood-opacity=".22"/></filter><filter id="smallShadow" x="-25%" y="-25%" width="160%" height="175%"><feDropShadow dx="3" dy="4" stdDeviation="1.5" flood-color="#17241f" flood-opacity=".23"/></filter>
+          </defs>
+          <g id="facade-background"><rect width="1200" height="800" fill="url(#skyWash)"/><path d="M0 738Q270 720 520 737t680-7v70H0Z" fill="#91a080" opacity=".55"/><rect x="75" y="182" width="1050" height="553" fill="url(#wallWash)" stroke="#17241f" stroke-width="4"/><rect x="79" y="186" width="1042" height="545" fill="url(#wallGrain)" opacity=".7"/></g>
+          <g id="texture" fill="none" stroke="#75674e" stroke-width="1" opacity=".2"><path d="M80 388h1040M80 555h1040M338 186v545M862 186v545"/><path d="m113 286 87-2m807 2 73-1M97 477l112-2m777 0 106 2"/></g>
+          <g id="cornice" stroke="#17241f" stroke-linejoin="round"><path d="M51 181h1098l-14-29H65Z" fill="#a5946d" stroke-width="4" filter="url(#softShadow)"/><path d="M37 152h1126v-25H37Z" fill="#cbbc94" stroke-width="4"/><path d="M58 127h1084l-11-19H69Z" fill="#aa9971" stroke-width="3"/><path d="M82 108h1036V93H82Z" fill="#d9cba6" stroke-width="3"/><path d="M84 163h1032" stroke="#716142" stroke-width="3"/><path d="M100 152v17h35v-17m36 0v17h35v-17m36 0v17h35v-17m650 0v17h35v-17m36 0v17h35v-17m36 0v17h35v-17" fill="#8d7c57" stroke-width="2"/></g>
+          <g id="title-zone" fill="#17241f" text-anchor="middle"><text x="600" y="228" class="svg-kicker">ESTABLISHED MMXXVI · OPEN IRREGULARLY</text><text x="600" y="292" class="svg-title">THE LEPORE INSTITUTE</text><path d="M328 311q272 7 544-1" fill="none" stroke="#766747" stroke-width="1.5"/><text x="600" y="339" class="svg-tagline">ART · WORK · FILM · EXPERIMENT</text></g>
+          <g id="windows" stroke="#17241f" filter="url(#smallShadow)"><g transform="translate(128 393) rotate(-.15)"><rect width="192" height="207" fill="#b5a47e" stroke-width="4"/><rect x="15" y="15" width="162" height="165" fill="url(#glassWash)" stroke-width="4"/><path d="M96 16v163M16 97h160" stroke="#d7c79e" stroke-width="7"/><path d="m16 48 52-32h31L16 75Z" fill="#e0e5dd" opacity=".17" stroke="none"/><path d="M-8 180h208l-11 23H2Z" fill="#c8b78e" stroke-width="3"/></g><g transform="translate(880 393) rotate(.12)"><rect width="192" height="207" fill="#b5a47e" stroke-width="4"/><rect x="15" y="15" width="162" height="165" fill="url(#glassWash)" stroke-width="4"/><path d="M96 16v163M16 97h160" stroke="#d7c79e" stroke-width="7"/><path d="m176 40-49-24H98l78 57Z" fill="#e0e5dd" opacity=".14" stroke="none"/><path d="M-8 180h208l-11 23H2Z" fill="#c8b78e" stroke-width="3"/></g></g>
+          <g id="banners" filter="url(#smallShadow)"><g transform="translate(91 353) rotate(-.7)"><path d="M-10 0h99" stroke="#17241f" stroke-width="5"/><circle cx="-11" r="7" fill="#bc9747" stroke="#17241f" stroke-width="2"/><circle cx="90" r="7" fill="#bc9747" stroke="#17241f" stroke-width="2"/><path d="M0 9h77v150l-39-20-38 20Z" fill="#29493b" stroke="#17241f" stroke-width="3"/><text x="38" y="94" class="banner-text">LI</text></g><g transform="translate(1032 353) rotate(.6)"><path d="M-10 0h99" stroke="#17241f" stroke-width="5"/><circle cx="-11" r="7" fill="#bc9747" stroke="#17241f" stroke-width="2"/><circle cx="90" r="7" fill="#bc9747" stroke="#17241f" stroke-width="2"/><path d="M0 9h77v157l-39-23-38 18Z" fill="#29493b" stroke="#17241f" stroke-width="3"/><text x="38" y="94" class="banner-text">LI</text></g></g>
+          <g id="entrance" filter="url(#softShadow)" stroke="#17241f" stroke-linejoin="round">
+            <path d="M421 686V430h358v256Z" fill="#a8956f" stroke-width="5"/><path d="M438 680V425h324v255Z" fill="#d8c9a4" stroke-width="3"/>
+            <path d="M414 422h372l-186-72Z" fill="#d9cba7" stroke-width="5"/><path d="M438 416h324l-162-52Z" fill="#c8b88f" stroke-width="2"/><path d="M446 426h308v18H446Z" fill="#b6a47d" stroke-width="3"/><path d="M453 444h294v13H453Z" fill="#e0d2ad" stroke-width="2"/>
+            <text x="600" y="402" class="lintel-text">LI</text><path d="M486 421q114 8 228 0" fill="none" stroke="#867451" stroke-width="1.5"/>
+            <g class="portico-column"><path d="M440 451h47v218h-47Z" fill="#cbbb95" stroke-width="3"/><path d="M448 459h30v201h-30Z" fill="#e0d2ae" stroke-width="2"/><path d="M434 443h59v18h-59ZM431 660h65v20h-65Z" fill="#b2a078" stroke-width="3"/><path d="M455 466v187" stroke="#fff" stroke-width="3" opacity=".35"/></g>
+            <g class="portico-column"><path d="M713 451h47v218h-47Z" fill="#cbbb95" stroke-width="3"/><path d="M722 459h29v201h-29Z" fill="#e0d2ae" stroke-width="2"/><path d="M707 443h59v18h-59ZM704 660h65v20h-65Z" fill="#b2a078" stroke-width="3"/><path d="M729 466v187" stroke="#fff" stroke-width="3" opacity=".35"/></g>
+            <path d="M485 665V456h230v209Z" fill="#09110e" stroke-width="6"/>
+            <g id="doors"><g class="svg-door svg-door-left"><path d="M489 460h110v201H489Z" fill="url(#doorWash)" stroke="#b79858" stroke-width="3"/><path d="M502 476h84v65h-84Zm0 81h84v87h-84Z" fill="none" stroke="#b79858" stroke-width="4"/><circle cx="580" cy="548" r="7" fill="#d2aa4e" stroke="#44351f" stroke-width="3"/></g><g class="svg-door svg-door-right"><path d="M601 460h110v201H601Z" fill="url(#doorWash)" stroke="#b79858" stroke-width="3"/><path d="M614 476h84v65h-84Zm0 81h84v87h-84Z" fill="none" stroke="#b79858" stroke-width="4"/><circle cx="620" cy="548" r="7" fill="#d2aa4e" stroke="#44351f" stroke-width="3"/></g></g>
+            <path d="M422 680h356v17H422Z" fill="#75664c" stroke-width="3"/>
+          </g>
+          <g id="lights" stroke="#17241f" stroke-width="3"><g transform="translate(383 444)"><path d="M0 0h31v9H8v25" fill="#5c4d36"/><path d="M-1 30h30l8 34H-9Z" fill="#d0aa55"/><path d="M-17 65h52l20 70H-37Z" fill="#e5c875" opacity=".09" stroke="none"/></g><g transform="translate(786 444) scale(-1 1)"><path d="M0 0h31v9H8v25" fill="#5c4d36"/><path d="M-1 30h30l8 34H-9Z" fill="#d0aa55"/><path d="M-17 65h52l20 70H-37Z" fill="#e5c875" opacity=".09" stroke="none"/></g></g>
+          <g id="ground-detail" fill="none" stroke="#526151" opacity=".28"><path d="M0 739q220-12 430 0t770-6M53 774l174-5m756 3 169-7M287 746l-28 54m674-54 24 54"/><path d="M73 751q28-12 54 0m932 3q30-14 61-2" stroke-width="1"/></g>
+          <g id="landscaping" stroke="#17241f" stroke-linejoin="round"><g transform="translate(91 565) rotate(-.5)" filter="url(#smallShadow)"><path d="M34 130Q-2 96 29 67q-5-37 32-39 12-35 46-15 28-26 54 2 37-8 42 28 37 16 22 52 20 25-7 39Z" fill="#315640" stroke-width="3"/><g fill="#55775a" stroke-width="1.6"><path d="m37 110 28-58 17 61Z"/><path d="m74 111 29-85 18 88Z"/><path d="m111 112 35-82 14 86Z"/><path d="m149 113 33-66 12 72Z"/></g><path d="M28 72q43 20 75 61M105 25q-1 62 8 106m72-86q-43 39-52 88" fill="none" stroke="#778f71" stroke-width="2"/><path d="m21 92-16-12m19 28-22 2m197-31 19-13m-13 38 25 1" fill="none" stroke="#536c50" stroke-width="2"/><path d="M10 126h220l-18 72H29Z" fill="#a46e48" stroke-width="4"/><path d="M18 138h202" stroke="#d1a17a" stroke-width="3"/></g><g transform="translate(882 559) rotate(.7)" filter="url(#smallShadow)"><path d="M24 137Q-9 102 24 72q-4-40 34-41 12-38 48-16 29-28 57 1 38-9 44 30 38 17 22 54 21 26-8 40Z" fill="#3f664b" stroke-width="3"/><g fill="#607e5d" stroke-width="1.6"><path d="m31 117 31-62 17 65Z"/><path d="m70 119 31-88 18 91Z"/><path d="m111 119 38-85 14 90Z"/><path d="m153 120 34-69 13 74Z"/></g><path d="M28 76q46 21 79 65M104 28q1 65 10 112m76-90q-45 40-55 92" fill="none" stroke="#819578" stroke-width="2"/><path d="m17 96-18-12m22 29-22 3m207-33 20-14m-13 40 26 2" fill="none" stroke="#567152" stroke-width="2"/><path d="M7 133h231l-19 75H27Z" fill="#98633f" stroke-width="4"/><path d="M16 145h212" stroke="#cb9870" stroke-width="3"/></g></g>
+          <g id="steps" stroke="#17241f" stroke-width="3" filter="url(#smallShadow)"><path d="M450 678h300l22 22H428Z" fill="#b9aa85"/><path d="M428 700h344l22 22H406Z" fill="#aa9b79"/><path d="M406 722h388l27 25H379Z" fill="#9b8c6d"/><path d="M379 747h442l29 27H350Z" fill="#8c7e63"/></g>
+          <g id="signage" transform="translate(785 650) rotate(1.8)" filter="url(#smallShadow)"><path d="m20 74-13 53m98-53 13 53" stroke="#17241f" stroke-width="6"/><path d="M0 0h124v89H0Z" fill="#eee5cc" stroke="#17241f" stroke-width="4"/><path d="M9 9h106v70H9Z" fill="none" stroke="#9a7b42" stroke-width="2"/><text x="62" y="52" class="sign-text">ENTER →</text></g><g id="institutional-detail"><rect x="748" y="612" width="54" height="23" fill="#b89652" stroke="#17241f" stroke-width="2"/><text x="775" y="628" text-anchor="middle" class="plaque-text">No. 26</text></g>
+        </svg>
+        <svg class="museum-facade-mobile" viewBox="0 0 700 920" role="img" aria-labelledby="mobile-facade-title mobile-facade-description" preserveAspectRatio="xMidYMin meet">
+          <title id="mobile-facade-title">The Lepore Institute on a narrow screen</title><desc id="mobile-facade-description">A portrait composition of the illustrated museum, centered on its welcoming green doors.</desc>
+          <rect width="700" height="920" fill="url(#skyWash)"/><rect x="16" y="135" width="668" height="745" fill="url(#wallWash)" stroke="#17241f" stroke-width="4"/><rect x="20" y="139" width="660" height="737" fill="url(#wallGrain)" opacity=".7"/><use href="#cornice" transform="translate(2 70) scale(.58)"/>
+          <g class="mobile-title-zone" fill="#17241f" text-anchor="middle"><text x="350" y="218" class="svg-kicker">ESTABLISHED MMXXVI · OPEN IRREGULARLY</text><text x="350" y="276" class="svg-title">THE LEPORE</text><text x="350" y="326" class="svg-title">INSTITUTE</text><path d="M145 344q205 6 410 0" fill="none" stroke="#766747" stroke-width="1.5"/><text x="350" y="375" class="svg-tagline">ART · WORK · FILM · EXPERIMENT</text></g>
+          <g class="mobile-window" transform="translate(62 454) rotate(-.3)" stroke="#17241f" filter="url(#smallShadow)"><rect width="132" height="188" fill="#b5a47e" stroke-width="4"/><rect x="13" y="13" width="106" height="148" fill="url(#glassWash)" stroke-width="4"/><path d="M66 14v146M14 86h104" stroke="#d7c79e" stroke-width="6"/><path d="M-5 161h142l-9 22H3Z" fill="#c8b78e" stroke-width="3"/></g><g class="mobile-window" transform="translate(506 454) rotate(.3)" stroke="#17241f" filter="url(#smallShadow)"><rect width="132" height="188" fill="#b5a47e" stroke-width="4"/><rect x="13" y="13" width="106" height="148" fill="url(#glassWash)" stroke-width="4"/><path d="M66 14v146M14 86h104" stroke="#d7c79e" stroke-width="6"/><path d="M-5 161h142l-9 22H3Z" fill="#c8b78e" stroke-width="3"/></g>
+          <use href="#entrance" transform="translate(-310 85) scale(1.1)"/><use href="#steps" transform="translate(-220 135) scale(.95)"/>
+          <g class="mobile-landscaping" stroke="#17241f" stroke-linejoin="round" filter="url(#smallShadow)"><g transform="translate(22 646) rotate(-1)"><path d="M16 78Q-2 51 22 35q4-29 34-19 20-25 43-1 28 2 27 31 23 18 2 34Z" fill="#355c49" stroke-width="3"/><path d="M8 77h129l-13 58H21Z" fill="#a06e48" stroke-width="4"/></g><g transform="translate(550 642) rotate(1)"><path d="M16 82Q-2 53 22 36q3-29 34-18 20-26 43-1 28 1 27 31 23 18 2 35Z" fill="#42664c" stroke-width="3"/><path d="M8 80h129l-13 58H21Z" fill="#956440" stroke-width="4"/></g></g>
+          <g id="mobile-signage" transform="translate(472 735) rotate(2)" filter="url(#smallShadow)"><path d="m16 58-10 49m82-49 10 49" stroke="#17241f" stroke-width="5"/><path d="M0 0h104v70H0Z" fill="#eee5cc" stroke="#17241f" stroke-width="4"/><path d="M8 8h88v54H8Z" fill="none" stroke="#9a7b42" stroke-width="2"/><text x="52" y="42" class="sign-text">ENTER →</text></g><g id="mobile-institutional-detail"><rect x="470" y="668" width="48" height="21" fill="#b89652" stroke="#17241f" stroke-width="2"/><text x="494" y="683" text-anchor="middle" class="plaque-text">No. 26</text></g>
+        </svg>
+        <button class="entrance-hit" type="button" data-enter aria-label="Enter The Lepore Institute through the museum doors"><span>Enter the museum</span></button><button class="enter-sign-hit" type="button" data-enter aria-label="Enter The Lepore Institute"><span>Enter</span></button>
+      </div>
+      <p class="collection-mark">LI COLLECTION / EST. MMXXVI</p>
+    </section>
+
+    <section class="scene foyer" id="foyer" data-scene="foyer" aria-labelledby="foyer-title" hidden>
+      <header class="room-header"><button data-go="exterior" class="exit">Exit</button><p>Grand Foyer · Floor 01</p><span>LI</span></header>
+      <div class="foyer-architecture" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="doorway doorway-left" aria-hidden="true"><span>Gallery I</span></div>
+      <div class="doorway doorway-right" aria-hidden="true"><span>Gallery IV</span></div>
+      <nav class="directory" aria-labelledby="foyer-title">
+        <p>The Lepore Institute</p>
+        <h2 id="foyer-title">Today’s Exhibitions</h2>
+        <button data-go="work"><b>I</b><span>Works &amp; Professional Activity</span><i>←</i></button>
+        <button data-go="art"><b>II</b><span>Art</span><i>→</i></button>
+        <button data-go="film"><b>III</b><span>Moving Image</span><i>←</i></button>
+        <button data-go="build"><b>IV</b><span>Things Built</span><i>→</i></button>
+      </nav>
+      <button class="founder portrait" data-artifact="founder" aria-label="View About the Founder"><span class="portrait-drawing" aria-hidden="true"></span><b>About the Founder</b></button>
+      <button class="donation" data-artifact="donation" aria-label="Inspect donation box"><span>Donations</span></button>
+      <div class="bench" aria-label="A museum bench" role="img"><i></i><i></i></div>
+      <div class="plant" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
+      <div class="extinguisher" aria-hidden="true">FIRE</div>
+    </section>
+
+    <section class="scene gallery work-room" id="work" data-scene="work" aria-labelledby="work-title" hidden>
+      <header class="room-header"><button data-go="foyer">← Foyer</button><p>Gallery I</p><span>LI</span></header>
+      <div class="gallery-title"><p>Permanent Collection</p><h2 id="work-title">Works &amp; Professional Activity</h2></div>
+      <div class="wall-line" aria-hidden="true"></div>
+      <button class="artifact hardhat" data-artifact="engineering" aria-label="Examine Environmental Engineering"><span><i class="hardhat-shell"></i><i class="field-book">FIELD<br>NOTES</i><i class="sample-vial"></i></span><b>Environmental<br>Engineering</b></button>
+      <button class="artifact globe" data-artifact="gis" aria-label="Examine GIS and Mapping globe">
+        <span class="globe-meridian"><i class="globe-sphere"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M17 28c9-13 20-16 29-11l5 12 13 3 4 11-13 8-7 18-15-2-5-13-13-8Z"/><path d="M70 18c9 4 15 12 17 22l-9 5-7-8-9-4Z"/><path d="M69 61l15-5-3 15-13 13-8-5Z"/></svg></i></span><i class="globe-stem"></i><i class="globe-base"></i><b>GIS / Mapping</b>
+      </button>
+      <button class="artifact data-machine" data-artifact="data" aria-label="Examine Data and Technical Work"><span><i class="data-screen">101<br>011</i><i class="data-key"></i><i class="data-key"></i><i class="data-key"></i></span><b>Data / Technical Work</b></button>
+      <button class="artifact hanging-plane" data-artifact="faa" aria-label="Examine FAA Part 107 hanging aircraft">
+        <span class="plane-wires" aria-hidden="true"></span><span class="plane-model"><svg viewBox="0 0 180 75" aria-hidden="true"><path class="plane-body" d="M8 40 69 32 99 8l14 1-13 24 56 8 15 10-70-3-17 19-13-1 8-20-62 4Z"/><path class="plane-detail" d="m42 36 55 7m4-9-6 14m-16-15 21 15"/></svg></span><b>FAA Part 107</b>
+      </button>
+      <button class="artifact lectern" data-artifact="resume" aria-label="Open Catalogue of Professional Activity resume">
+        <span class="lectern-book"><i>CATALOGUE</i><small>OF PROFESSIONAL ACTIVITY</small><strong>RESUME</strong></span><span class="lectern-top"></span><span class="lectern-post"></span><span class="lectern-foot"></span><b>Catalogue / Resume</b>
+      </button>
+      <p class="room-note">Objects on display may be examined.</p>
+    </section>
+
+    <section class="scene gallery art-room" id="art" data-scene="art" aria-labelledby="art-title" hidden>
+      <header class="room-header"><button data-go="foyer">← Foyer</button><p>Gallery II</p><span>LI</span></header>
+      <div class="gallery-title"><p>Rotating Exhibition</p><h2 id="art-title">Art</h2></div>
+      <p class="do-not-touch">Please do not touch the art</p>
+      <button class="artwork artwork-one" data-artifact="art-one" aria-label="View artwork Untitled Field Study"><span role="img" aria-label="Abstract placeholder painting in ochre, rust, and green"></span><b>01</b></button>
+      <button class="artwork artwork-two" data-artifact="art-two" aria-label="View artwork Signal and Soil"><span role="img" aria-label="Abstract placeholder painting with blue lines and red circle"></span><b>02</b></button>
+      <button class="artwork artwork-three" data-artifact="art-three" aria-label="View artwork EROpel Study"><span role="img" aria-label="Abstract placeholder painting with organic black shapes"></span><b>03</b></button>
+      <div class="gallery-bench" aria-hidden="true"></div>
+    </section>
+
+    <section class="scene gallery film-room" id="film" data-scene="film" aria-labelledby="film-title" hidden>
+      <header class="room-header dark"><button data-go="foyer">← Foyer</button><p>Gallery III</p><span>LI</span></header>
+      <div class="gallery-title"><p>Screening Room</p><h2 id="film-title">Moving Image</h2></div>
+      <div class="projector-beam" aria-hidden="true"></div>
+      <button class="screen-installation" data-artifact="film-one" aria-label="View Field Recording 008 details"><span><i>FIELD RECORDING 008</i><b>▶</b></span><em>Projection 01</em></button>
+      <button class="crt crt-one" data-artifact="film-two" aria-label="View Field Recording 009 details"><span><i>NO SIGNAL / FILM 009</i></span><b></b><em>Monitor 02</em></button>
+      <button class="crt crt-two" data-artifact="film-three" aria-label="View Field Recording 010 details"><span><i>ARCHIVE / FILM 010</i></span><b></b><em>Monitor 03</em></button>
+      <p class="film-note">Programme repeats continuously</p>
+    </section>
+
+    <section class="scene gallery build-room" id="build" data-scene="build" aria-labelledby="build-title" hidden>
+      <header class="room-header"><button data-go="foyer">← Foyer</button><p>Gallery IV</p><span>LI</span></header>
+      <div class="gallery-title"><p>Machines &amp; Experiments</p><h2 id="build-title">Things Built</h2></div>
+      <button class="terminal" data-artifact="enviroregindex" aria-label="Examine EnviroRegIndex interactive terminal">
+        <span class="terminal-screen"><i>LI SYSTEMS / 001</i><strong>ENVIRO<br>REG INDEX</strong><small>PRESS TO INSPECT</small></span>
+        <span class="terminal-controls"><i></i><i></i><i></i></span><b></b>
+      </button>
+      <div class="terminal-placard"><b>ENVIROREGINDEX</b><span>Interactive information system<br>2026–Present</span></div>
+      <button class="closed-gallery" data-artifact="installation"><span>Gallery closed<br><small>for installation</small></span></button>
+      <div class="tool-cabinet" aria-hidden="true"><i></i><i></i><i></i></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" data-modal hidden>
+    <article class="exhibit-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal-close" type="button" aria-label="Close exhibit details">Close ×</button>
+      <p class="accession" data-modal-accession></p>
+      <div class="modal-object" data-modal-visual aria-hidden="true"></div>
+      <div class="modal-copy"><h2 id="modal-title"></h2><div data-modal-body></div><div class="modal-links" data-modal-links></div></div>
+    </article>
+  </div>
+  <noscript><p class="noscript">The galleries use a small amount of JavaScript for room changes. Please enable JavaScript to enter; no tracking or framework is used.</p></noscript>
+</body>
+</html>
