@@ -64,3 +64,9 @@
 @media(max-width:430px){.exterior{min-height:520px}.entrance-hit{width:33%;height:37%;bottom:9%}.enter-sign-hit{left:65%;width:15%;bottom:3%}.svg-kicker{font-size:10px}.svg-tagline{font-size:12px}.svg-title{font-size:46px}}
 @media(max-width:390px){.entrance-hit{width:36%;bottom:8.5%}.enter-sign-hit{left:66%;width:16%}.svg-title{font-size:43px}}
 @media(prefers-reduced-motion:reduce){.svg-door{transition-duration:.01ms!important}}
+
+/* Portrait exterior: preserve the architecture's proportions instead of stretching it. */
+.museum-facade-mobile{display:none}.entrance-hit span,.enter-sign-hit span{display:none}
+@media(max-width:760px){.exterior-illustration{place-items:center}.museum-facade{display:block;position:absolute;width:0;height:0;overflow:hidden}.museum-facade-mobile{display:block;width:100%;height:auto;position:relative;z-index:1}.entrance-hit{bottom:8%;width:38%;height:39%}.enter-sign-hit{left:66%;bottom:4%;width:17%;height:16%}}
+@media(max-width:430px){.entrance-hit{bottom:9%;width:40%;height:38%}.enter-sign-hit{left:67%;bottom:6%;width:18%;height:14%}}
+@media(max-width:390px){.entrance-hit{bottom:10%;width:42%;height:36%}.enter-sign-hit{left:67%;bottom:7%;width:19%}}
