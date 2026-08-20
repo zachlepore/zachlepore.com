@@ -67,6 +67,10 @@
 
 /* Portrait exterior: preserve the architecture's proportions instead of stretching it. */
 .museum-facade-mobile{display:none}.entrance-hit span,.enter-sign-hit span{display:none}
-@media(max-width:760px){.exterior-illustration{place-items:center}.museum-facade{display:block;position:absolute;width:0;height:0;overflow:hidden}.museum-facade-mobile{display:block;width:100%;height:auto;position:relative;z-index:1}.entrance-hit{bottom:8%;width:38%;height:39%}.enter-sign-hit{left:66%;bottom:4%;width:17%;height:16%}}
+@media(max-width:760px){.exterior-illustration{place-items:center}.museum-facade{display:block;position:relative;width:100%;height:auto;overflow:visible}.museum-facade-mobile{display:none}.entrance-hit{bottom:8%;width:38%;height:39%}.enter-sign-hit{left:66%;bottom:4%;width:17%;height:16%}}
 @media(max-width:430px){.entrance-hit{bottom:9%;width:40%;height:38%}.enter-sign-hit{left:67%;bottom:6%;width:18%;height:14%}}
 @media(max-width:390px){.entrance-hit{bottom:10%;width:42%;height:36%}.enter-sign-hit{left:67%;bottom:7%;width:19%}}
+
+/* Single-SVG responsive framing: one illustration, two art-directed compositions. */
+#mobile-composition{display:none}
+@media(max-width:760px){.museum-facade{display:block;position:relative;width:100%;height:auto;overflow:visible}#desktop-composition{display:none}#mobile-composition{display:block}.exterior-illustration{place-items:center}.exterior{height:max(100dvh,620px)}}

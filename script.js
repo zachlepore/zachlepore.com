@@ -21,6 +21,12 @@ const exhibits = {
 function artDetails(artist, year, medium, dimensions, note) { return `<dl><dt>Artist</dt><dd>${artist}</dd><dt>Year</dt><dd>${year}</dd><dt>Medium</dt><dd>${medium}</dd><dt>Dimensions</dt><dd>${dimensions}</dd><dt>Note</dt><dd>${note}</dd></dl>`; }
 function filmDetails(artist, year, medium, runtime) { return `<dl><dt>Artist</dt><dd>${artist}</dd><dt>Year</dt><dd>${year}</dd><dt>Format</dt><dd>${medium}</dd><dt>Runtime</dt><dd>${runtime}</dd></dl><div class="video-slot">Video / thumbnail awaiting installation</div>`; }
 
+const facade = document.querySelector('.museum-facade');
+const compactFacade = matchMedia('(max-width: 760px)');
+function frameFacade(query = compactFacade) { facade?.setAttribute('viewBox', query.matches ? '0 0 700 920' : '0 0 1200 800'); }
+frameFacade();
+compactFacade.addEventListener?.('change', frameFacade);
+
 const scenes = [...document.querySelectorAll('[data-scene]')];
 const modal = document.querySelector('[data-modal]');
 const modalPanel = modal.querySelector('.exhibit-modal');
